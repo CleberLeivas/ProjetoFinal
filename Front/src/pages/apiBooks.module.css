@@ -1,0 +1,42 @@
+/* Estilo da seção que envolve todos os cartões de livros */
+.cardsBooks {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cartões se alinhem em várias linhas */
+    justify-content: center; /* Centraliza os cartões na horizontal */
+    gap: 16px; /* Espaçamento entre os cartões */
+    padding: 20px;
+  }
+  
+  /* Estilo do contêiner principal */
+  .wrapBooks {
+    text-align: center; /* Centraliza o texto no contêiner */
+    padding: 20px;
+    background-color: #f5f5f5; /* Cor de fundo para a página */
+    min-height: 100vh; /* Garante que a página ocupe pelo menos a altura da janela */
+  }
+  
+  /* Estilo do título principal */
+  .wrapBooks h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo dos inputs */
+  .wrapBooks input[type="text"] {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 200px;
+  }
+  
+  /* Estilo responsivo para a seção de cartões */
+  @media (max-width: 600px) {
+    .cardsBooks {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
