@@ -101,7 +101,11 @@ function ReaderList(props) {
                       Editar
                     </button>
                     <button
-                      onClick={() => deleteReader(reader.id)}
+                      onClick={() => {
+                        if (window.confirm("Tem certeza que deseja deletar este leitor?")) {
+                          deleteReader(reader.id);
+                        }
+                      }}
                       className="btn btn-danger btn-sm"
                       type="button"
                     >

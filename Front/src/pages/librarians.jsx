@@ -103,7 +103,11 @@ function LibrarianList(props) {
                     Editar
                   </button>
                   <button
-                    onClick={() => deleteLibrarian(librarian.id)}
+                    onClick={() => {
+                      if (window.confirm("Tem certeza que deseja deletar este bibliotecário?")) {
+                        deleteLibrarian(librarian.id);
+                      }
+                    }}
                     className="btn btn-danger btn-sm"
                     type="button"
                   >
