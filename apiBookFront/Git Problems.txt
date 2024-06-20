@@ -1,0 +1,6 @@
+git add .
+git commit -m "Commit inicial"
+git remote add origin https://github.com/nogueiiiiiiiiira/apiBooks.git
+git remote add origin https://github.com/CleberLeivas/ProjetoFinal.git
+git push -u origin main
+git push --force origin main
